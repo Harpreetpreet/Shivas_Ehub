@@ -11,11 +11,18 @@ module.exports = {
 
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+      colors: ({ theme }) => ({
+        brand: '#222226',
+        primary: '#ffecb3',
+        secondary: '#104a3a',
+        lightShade: '#f7f7f7',
+        darkShade: '#8C8C8C',
+        accent: '#999999',
+      }),
+      fontFamily: ({ theme }) => ({
+        primary: 'Roboto, "Helvetica Neue", Arial, sans-serif',
+        secondary: 'Poppins, sans-serif',
+      }),
     },
   },
   plugins: [],
